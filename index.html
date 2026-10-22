@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DARK DECK | TCG Oficial &amp; Colecionáveis</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <div class="announcement-content">
+      <span class="live-dot"></span>
+      <span>Envios para todo o Brasil &amp; Retiradas em <strong>Manaus - AM</strong> • Produtos 100% Originais e Lacrados</span>
+    </div>
+  </aside>
+
+  <!-- Header Unificado Glassmorphism -->
+  <header class="header">
+    <div class="header-container">
+      
+      <!-- Brand & Mobile Toggle -->
+      <div class="brand-group">
+        <button id="mobileMenuBtn" class="btn-icon btn-hamburger" aria-label="Abrir menu de navegação">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span class="mobile-filter-badge" id="mobileFilterCount" style="display: none;">0</span>
+        </button>
+
+        <!-- Logótipo Único para Ambos os Modos -->
+        <a href="#" class="logo-brand">
+          <img 
+            src="darkdecklogo.png" 
+            alt="DARK DECK" 
+            class="logo-img" 
+            onerror="this.style.display='none'; document.getElementById('logoFallbackText').style.display='flex';" 
+          />
+          <div class="logo-text" id="logoFallbackText">
+            DARK<span>DECK</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Menus Textuais Desktop -->
+      <nav class="header-nav desktop-only" id="desktopNavFilters">
+        <!-- Injetado dinamicamente via JS -->
+      </nav>
+
+      <!-- Barra de Busca Minimalista com 'X' -->
+      <div class="search-wrapper">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Buscar no estoque..." />
+        <button type="button" id="clearSearchBtn" class="btn-clear-search" aria-label="Limpar busca" style="display: none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Ações / Alternância de Tema -->
+      <div class="actions">
+        <button id="themeToggle" class="btn-icon theme-btn" aria-label="Alternar tema">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-glow-radial"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span>TCG ORIGINAL &amp; LACRADO</span>
+      </div>
+      <h1 class="hero-title">O seu arsenal definitivo de <span class="text-gradient">Cartas &amp; Colecionáveis</span></h1>
+      <p class="hero-subtitle">Produtos oficiais lacrados, boosters, displays e shields exclusivos com entrega imediata em Manaus e envio rápido para todo o país.</p>
+
+      <!-- Trust Pillars -->
+      <div class="hero-pillars">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="pillar-info">
+            <strong>100% Autêntico</strong>
+            <span>Produtos direto de distribuidores oficiais</span>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          </div>
+          <div class="pillar-info">
+            <strong>Retirada &amp; Entrega</strong>
+            <span>Envio rápido ou retirada em Manaus</span>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="pillar-info">
+            <strong>Embalagem Blindada</strong>
+            <span>Proteção reforçada para colecionadores</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo Principal -->
+  <main class="main-content">
+    <div class="catalog-header">
+      <div class="catalog-title-group">
+        <span class="catalog-eyebrow">CATÁLOGO EM TEMPO REAL</span>
+        <h2 class="catalog-title">Estoque Disponível</h2>
+      </div>
+      <div class="catalog-meta">
+        <span class="catalog-count-pill" id="productCount">Carregando estoque...</span>
+      </div>
+    </div>
+
+    <!-- Grid de Produtos -->
+    <div class="products-grid" id="productsGrid"></div>
+
+    <!-- Estado Vazio -->
+    <div class="empty-state" id="emptyState" style="display: none;">
+      <div class="empty-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </div>
+      <h3>Nenhum item encontrado</h3>
+      <p>Tente ajustar a busca ou limpar os filtros ativos para ver todos os produtos.</p>
+    </div>
+  </main>
+
+  <!-- Gaveta Lateral Mobile -->
+  <div class="drawer-overlay" id="mobileDrawerOverlay">
+    <aside class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-header">
+        <div class="mobile-drawer-title-box">
+          <span class="drawer-eyebrow">NAVEGAÇÃO</span>
+          <span class="drawer-title">Departamentos &amp; Filtros</span>
+        </div>
+        <button class="btn-icon" id="closeMobileDrawerBtn" aria-label="Fechar menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-drawer-body" id="mobileDrawerBody"></div>
+    </aside>
+  </div>
+
+  <!-- Lightbox (Foto Ampliada) -->
+  <div class="modal-overlay image-preview-overlay" id="imagePreviewModal">
+    <div class="image-preview-container">
+      <button class="btn-icon btn-close-preview" id="closeImagePreviewBtn" aria-label="Fechar foto">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img id="previewModalImg" src="" alt="Produto ampliado" />
+      <div class="image-preview-caption">
+        <span id="previewModalTitle"></span>
+        <small id="previewModalSubtitle"></small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botões Flutuantes do Carrinho -->
+  <div class="floating-cart-wrapper" id="floatingCartWrapper" style="display: none;">
+    <button id="floatingCheckoutBtn" class="floating-checkout-btn">
+      <div class="cart-icon-bubble">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count-badge" id="floatingCartCount">0</span>
+      </div>
+      <span class="cart-btn-label">Ver Carrinho</span>
+      <span class="cart-counter-pill" id="floatingCartTotal">R\$ 0,00</span>
+    </button>
+    <button id="floatingClearCartBtn" class="btn-floating-clear" title="Esvaziar carrinho">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="3 6 5 6 21 6"></polyline>
+        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+      </svg>
+      <span>Limpar</span>
+    </button>
+  </div>
+
+  <!-- Gaveta Lateral de Checkout -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-header-title-box">
+          <h2 class="cart-drawer-title">Meu Carrinho</h2>
+          <button class="btn-clear-cart-drawer" id="drawerClearCartBtn" title="Remover todos os itens">
+            Limpar tudo
+          </button>
+        </div>
+        <button class="btn-icon" id="closeCartBtn" aria-label="Fechar carrinho">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cart-drawer-body" id="cartItemsContainer"></div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Subtotal</span>
+          <span class="cart-total-value" id="cartTotalPrice">R\$ 0,00</span>
+        </div>
+        <button id="finishOrderWhatsApp" class="btn-whatsapp-finish">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.06-2.115-.527-1.745-.72-2.85-2.508-2.937-2.624-.087-.116-.708-.941-.708-1.794 0-.853.447-1.272.607-1.444.159-.172.346-.215.461-.215.116 0 .231.002.332.007.107.005.25-.041.391.297.144.346.491 1.196.534 1.283.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.182-.077.355.101.173.45 1.041 1.346 1.838 1.155 1.027 2.13 1.344 2.433 1.488.303.144.48.12.659-.087.179-.207.765-.89.969-1.194.204-.304.408-.255.688-.152.28.102 1.776.837 2.08 1.015.304.178.508.266.582.394.074.127.074.737-.07 1.142z"/>
+          </svg>
+          Finalizar Pedido via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <span class="footer-logo">DARK<span>DECK</span></span>
+        <p>A sua referência em Pokémon TCG, sleeves e produtos lacrados para colecionadores em Manaus e todo o Brasil.</p>
+      </div>
+      <div class="footer-meta-col">
+        <span class="footer-tag">OFICIAL &amp; SEGURO</span>
+        <p class="copyright">© 2026 DARK DECK. Todos os direitos reservados. Preços sujeitos a alteração sem aviso prévio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
